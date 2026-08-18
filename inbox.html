@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            animation: myanime 3s cubic-bezier(0.165, 0.84, 0.44, 1)infinite;
+        }
+
+        .box2 {
+            width: 300px;
+            height: 300px;
+            background-color: aquamarine;
+            animation: myanime 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+            position: relative;
+            bottom: 148px;
+
+        }
+
+        .box3 {
+            width: 300px;
+            height: 300px;
+            background-color: blanchedalmond;
+            animation: myanime 2s  cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            position: relative;
+            bottom: 295px;
+        }
+        .box4 {
+            width: 300px;
+            height: 300px;
+            animation: myanime 2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            bottom: 439px;
+            border-radius: 50%;
+
+        }
+        @keyframes myanime{
+            to{
+                transform: rotate(360deg);
+
+            }
+            from{
+                transform: rotate();
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+
+</div>
+<div class="box2"></div>
+<div class="box3"></div>
+<div class="box4"></div>
+    
+</body>
+</html>
